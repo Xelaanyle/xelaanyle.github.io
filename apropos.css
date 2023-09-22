@@ -1,0 +1,95 @@
+.main-contenair {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    margin: 10px auto;
+    width: 80%;
+    top: 230px;
+}
+
+.article1 {
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    text-align: center;
+    background-color: #00000094;
+    padding: 10px;
+    width: 50%;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.089),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.11),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.131),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.158),
+        100px 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+.photo {
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    text-align: center;
+    background-color: #00000094;
+    padding: 10px;
+    width: 30%;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.089),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.11),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.131),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.158),
+        100px 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+
+.article1 h1 {
+    font-family: Bebas Neue;
+    margin: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.text1 {
+    font-family: Agdasima;
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.text1 p {
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+.photo img {
+
+    max-width: 428px;
+    min-width: 200px;
+}
+
+footer {
+    position: relative;
+    bottom: -300px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px){
+    .main-contenair {
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    .photo img {
+        height: auto;
+        width: 80%;
+    }
+
+    .text1 p {
+        font-size: 25px;
+    }
+    .article1, .photo {
+        width: auto;
+    }
+}

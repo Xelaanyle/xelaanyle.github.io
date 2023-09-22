@@ -1,0 +1,144 @@
+.main-contenair {
+    position: relative;
+    height: auto;
+    margin: 10px auto;
+    width: 80%;
+    top: 180px;
+}
+
+.article1,.contact {
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;
+    background-color: #00000083;
+    padding: 10px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.089),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.11),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.131),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.158),
+        100px 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+.text1 {
+    font-family: Agdasima;
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: white 1px solid;
+}
+
+.article1 h1 {
+    font-family: Bebas Neue;
+    margin: 20px 0;
+}
+
+.formulaire {
+    background-color: #1c0794bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.formulaire label,
+input {
+    margin-bottom: 10px;
+}
+
+.formulaire {
+    border-radius: 20px;
+    border: white 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: Agdasima;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #000000;
+   
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+input[type="submit"],input[type="reset"] {
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Agdasima;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: aqua;
+    transition: all 1s ease;
+    
+}
+input[type="reset"]:hover {
+    background-color: darkred;
+    transition: all 1s ease;
+    
+}
+
+.contact {
+    font-size: 30px;
+    font-family: Agdasima;
+    color: white;
+}
+
+.contact a {
+    color: rgb(0, 221, 250);
+    border-bottom: transparent 1px solid;
+    transition: all 1s ease;
+}
+
+.contact a:hover {
+    border-bottom: 1px solid rgb(0, 221, 250);
+    
+}
+
+footer {
+    position: relative;
+    bottom: -270px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px)  {
+    .formulaire {
+        width: 100%;
+    }
+    .article1, .contact {
+        width: 100%;
+    }
+}

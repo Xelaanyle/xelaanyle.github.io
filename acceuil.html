@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Bebas+Neue&family=Belanosima&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Xelaanyle</title>
+</head>
+<header class="header">
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://www.twitch.tv/Xelaanyle" target="_blank"><img src="img/Logo Xelaanyle Final avec sign.png"
+                    alt="Xelaanyle"><span class="logo-lien">Lien vers Twitch</span></a>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="bestof.html">Best of</a></li>
+                <li><a href="apropos.html">Présentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <i class="bx bx-menu" id="burger"></i>
+</header>
+
+<body>
+    <div class="main-contenair">
+        <div class="article1">
+            <div class="text1">
+                <h1>Bonjour à tous et bienvenue !</h1>
+                <p>Je suis ravi de vous accueillir ici pour partager des moments de <strong>divertissement</strong>, de <strong>jeu</strong> et de
+                    <strong>communauté</strong>.<br> Rejoignez-moi lors de mes diffusions en direct pour vivre des moments mémorables,
+                    découvrir de nouvelles astuces et stratégies, et profiter d'une bonne dose de <strong>divertissement</strong>.
+                    Je suis impatient de partager mes aventures avec vous tous.
+                </p>
+            </div>
+        </div>
+        <div class="lecteur">
+            <!-- Ajoutez un espace réservé pour l'intégration Twitch -->
+            <div id="twitch-embed"></div>
+            <!-- Chargez le script d'intégration Twitch -->
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            <!-- Créez un objet Twitch.Player. Celui-ci s'affichera dans la div réservée -->
+            <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                    width: 1000, // Définissez la largeur souhaitée du lecteur (en pixels)
+                    height: 600, // Définissez la hauteur souhaitée du lecteur (en pixels)
+                    channel: "xelaanyle"
+                });
+            </script>
+            <iframe class="chatting" id="chat_embed" src="https://www.twitch.tv/embed/xelaanyle/chat" height="600" width="500">
+            </iframe>
+        </div>
+    </div>
+    <div class="icon" id="iconlist">
+        <div class="circle"><i class="ri-close-circle-line"></i></div>
+        <ul>
+            <li><a href="https://discord.gg/GPenEuJfCE" target="_blank"><i class="ri-discord-fill"></i>
+                    <p>Discord</p>
+                </a></i></li>
+            <li><a href="https://twitter.com/xelaanyle" target="_blank"><i class="ri-twitter-fill"></i>
+                    <p>Twitter</p>
+                </a></li>
+            <li><a href="https://www.youtube.com/channel/UCIoAVk6MfZJTVN-iWMY9HCA" target="_blank"><i
+                        class="ri-youtube-fill"></i>
+                    <p>Youtube</p>
+                </a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>© 2023 Xelaanyle. Tous droits réservés.</p>
+</footer>
+
+</html>

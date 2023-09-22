@@ -1,0 +1,88 @@
+.main-contenair {
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 10px auto;
+    width: 80%;
+    top: 180px;
+}
+
+.article1 {
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px auto;
+    text-align: center;
+    width: 800px;
+    background-color: #00000083;
+    padding: 10px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.089),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.11),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.131),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.158),
+        100px 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+.planning {
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    background-color: #000000d2;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.062),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.089),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.11),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.131),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.158),
+        100px 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+.planning img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.text1 {
+    font-family: Agdasima;
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.article1 h1 {
+    font-family: Bebas Neue;
+    margin: 20px 0;
+}
+
+#discord {
+    border-bottom: white 1px solid;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.text1 a {
+    border-bottom: white 1px solid;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.text1 a:hover {
+    color: aqua;
+}
+
+footer {
+    position: relative;
+    bottom: -200px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px)  {
+    .article1 {
+        width: 100%;
+    }
+}
